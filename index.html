@@ -8,6 +8,8 @@
 
     <!--Main CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="assets/img/Fev.png">
 
     <!--Unicons CSS-->
@@ -798,8 +800,70 @@
     <!--========================Start Testimonials Section==================-->
     <section class="testimoials section">
         <h2 data-heading="My Clients say" class="section_title">Testimoials</h2>
-        <div class="testimonials_containere container grid">
-            
+        <div class="testimonials_containere swiper container grid">
+            <div class="swiper-wrapper">
+                <div class="testimonial_card swiper-slide">
+                    <div class="testimonial_quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, temporibus.</p>
+                    <h3 class="testimonial_date">25 March 2020</h3>
+                    <div class="testimonial_profile">
+                        <img src="assets/img/Edgar-De-Jesus.jpg" alt="" class="testimonial_profile_img">
+                        <div class="testimonial_profile_data">
+                            <span class="testimonial_profile_name">Edjar De Jesus</span><br>
+                            <span class="testimonial_profile_detail">CEO Of Pool Nation</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="testimonial_card swiper-slide">
+                    <div class="testimonial_quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, temporibus.</p>
+                    <h3 class="testimonial_date">25 March 2020</h3>
+                    <div class="testimonial_profile">
+                        <img src="assets/img/Edgar-De-Jesus.jpg" alt="" class="testimonial_profile_img">
+                        <div class="testimonial_profile_data">
+                            <span class="testimonial_profile_name">Edjar De Jesus</span><br>
+                            <span class="testimonial_profile_detail">CEO Of Pool Nation</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="testimonial_card swiper-slide">
+                    <div class="testimonial_quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, temporibus.</p>
+                    <h3 class="testimonial_date">25 March 2020</h3>
+                    <div class="testimonial_profile">
+                        <img src="assets/img/Edgar-De-Jesus.jpg" alt="" class="testimonial_profile_img">
+                        <div class="testimonial_profile_data">
+                            <span class="testimonial_profile_name">Edjar De Jesus</span><br>
+                            <span class="testimonial_profile_detail">CEO Of Pool Nation</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="testimonial_card swiper-slide">
+                    <div class="testimonial_quote">
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </div>
+                    <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, temporibus.</p>
+                    <h3 class="testimonial_date">25 March 2020</h3>
+                    <div class="testimonial_profile">
+                        <img src="assets/img/Edgar-De-Jesus.jpg" alt="" class="testimonial_profile_img">
+                        <div class="testimonial_profile_data">
+                            <span class="testimonial_profile_name">Edjar De Jesus</span><br>
+                            <span class="testimonial_profile_detail">CEO Of Pool Nation</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!--========================close Testimonials Section==================-->
@@ -832,10 +896,21 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     
 
     <script>
         var mixer = mixitup('.videos');
+        let swiper = new Swiper(".testimonials_containere", {
+        spaceBetween: 20,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        
+      });
     </script>
     
 </body>
