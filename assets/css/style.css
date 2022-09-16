@@ -389,9 +389,7 @@ button, input{
     font-size: 1.25rem;
 }
 /*===================================================== About Section ==========================================*/
-.about{
-    padding-left: 25px;
-}
+
 .about_container{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
@@ -434,9 +432,7 @@ button, input{
     font-size: var(--smaller-font-size);
 }
 /*===================================================== Qualification Section ===================================*/
-.Qualification{
-    padding-left: 25px;
-}
+
 .Qualification_container{
     grid-template-columns: repeat(2, 450px);
     column-gap: 3rem;
